@@ -18,7 +18,7 @@ app = Flask(__name__,static_folder='static')
 
 
 def solicitud():
-    response = requests.get("C:/Users/Jesus Francisco/CurrentSong.txt")
+    response = requests.get("https://zenoplay.zenomedia.com/api/zenofm/nowplaying/r2errtf2uk8uv")
     data = response.json()
     title = data['title']
 
